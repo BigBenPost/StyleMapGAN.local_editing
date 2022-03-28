@@ -1,0 +1,89 @@
+<!-- 
+    Refer to https://github.com/quolc/neural-collage/blob/master/templates/demo_feature_blending/index.html
+ -->
+
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container" style="max-width: 1900px">
+    <div class="row justify-content-md-center">
+        <div class="col-md-10" id="main-column">
+            <!-- title -->
+            <div class="row" id="title">
+                <h2>
+                    Demo: SCSE21-0207
+                </h2>
+            </div>
+
+            <div class="row" id="title">
+                <h4>
+                    Towards Superior Control in Automatic Face Editing with Generative Adversarial Networks
+                </h4>
+            </div>
+
+
+            <!-- main UI -->
+            <div class="row justify-content-md-center" id="main-ui">
+                <div class="col-md-3">
+                    <p> Reference Image</p>
+                    <div id="p5-reference-wrapper" class="p5-wrapper">
+                        <div id="p5-reference" class="p5"></div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <p>Original Image</p>
+                    <div id="p5-original-wrapper" class="p5-wrapper">
+                        <div id="p5-original" class="p5"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-1 my-auto" id="main-ui-middle">
+                    <button type="submit" class="form-control btn btn-danger" id="main-ui-submit" disabled>➞</button>
+                </div>
+
+                <div class="col-md-3">
+                    <p>Generated Result</p>
+                    <div id="p5-right-wrapper" class="p5-wrapper">
+                        <div id="p5-right" class="p5"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row justify-content-md-center" id="palette">
+                <div class="col-md-11">
+                    <h4>Selected Editing Region</h4>
+                                        <select class="image-picker show-html form-control col-md-6" id="region-picker">
+                        <option value="eyebrow">eyebrows</option>
+                        <option value="eye">eyes</option>
+                        <option value="ear">ear</option>
+                                            <option value="nose">nose</option>
+                                            <option value="lip">lips</option>
+                    </select>
+        <a href="/interpolation">Interpolation mode</a>
+</button>
+                </div>
+            </div>
+            <!-- all class list -->
+            <div class="row justify-content-md-center" id="class-list">
+                <div class="col-md-11">
+                    <h4>Sample Images</h4>
+                    <select class="image-picker show-html form-control col-md-6" id="class-picker">
+                    </select>
+                </div>
+            </div>
+                        <!-- palette -->
+            <div class="row justify-content-md-center" id="palette">
+                <div class="col-md-11">
+                    <ul class="row" id="palette-body">
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
