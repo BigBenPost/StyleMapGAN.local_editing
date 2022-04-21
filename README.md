@@ -32,9 +32,7 @@ conda activate stylemapgan
 <b>Youtube video</b>
 Click the figure to watch the demo video.
 
- __(The current video is a placeholder only. Will be updated by 20th Apr)__
-
-<p align="left"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=j5VboflP4NE"><img width="100%" src="assets/teaser_video.png" /></a></p>
+<p align="left"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=JLTEUuzcXRQ"><img width="100%" src="assets/teaser_video.png" /></a></p>
 
 <b>Interactive demo app</b>
 Run demo in your local machine.
